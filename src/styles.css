@@ -533,3 +533,8 @@ dialog{position:fixed;inset:auto;left:50%;top:50%;margin:0;max-height:842px;tran
 .pin .pl{position:absolute;left:50%;top:70px;transform:translateX(-50%);white-space:nowrap;font-size:14px;font-weight:800;color:#111;text-shadow:0 0 3px #fff,0 0 3px #fff,0 0 4px #fff}
 .auth-panel input:focus{outline:none}
 .chrome .statusbar{pointer-events:none}
+/* nav 실측 보정: pill 12px, 아이콘 top 21, 인디케이터 bottom 9 */
+.bottom-nav{box-shadow:none}
+.bottom-nav:after{bottom:9px}
+.bottom-nav button{padding-top:5px;gap:10px}
+.bottom-nav button.active:before{top:-1px}
