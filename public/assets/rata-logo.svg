@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 52" role="img" aria-labelledby="title">
+  <title id="title">RATA</title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#17191C" d="M2 8h28c12 0 19 6 19 16 0 7-4 12-10 14l12 12H35L24 39h-8v11H2V8Zm14 11v10h12c5 0 7-2 7-5s-2-5-7-5H16Zm50-11h16l22 42H89l-4-8H63l-4 8H44L66 8Zm8 12-7 13h14l-7-13Zm22-12h43v12h-14v30h-15V20H96V8Zm55 0h16l22 42h-15l-4-8h-22l-4 8h-15l22-42Zm8 12-7 13h14l-7-13Z"/>
+    <path d="M55 47c18 4 57 4 76 0" stroke="#D62829" stroke-width="4" stroke-linecap="round"/>
+    <path d="M72 3c-4 5 4 6 0 11M85 3c-4 5 4 6 0 11" stroke="#D62829" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

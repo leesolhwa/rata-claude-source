@@ -1,0 +1,15 @@
+{
+  "name": "rata-claude-source-v45",
+  "version": "1.0.0",
+  "private": true,
+  "description": "RATA (라타) mobile ramen discovery prototype exported from the original Codex workspace",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "start": "npm run build && node scripts/serve.mjs",
+    "preview": "node scripts/serve.mjs",
+    "validate": "node --check src/app.js && node --check scripts/build.mjs && node --check scripts/serve.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
