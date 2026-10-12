@@ -33,7 +33,7 @@ dialog{width:calc(100% - 34px);max-width:396px;max-height:calc(100dvh - 90px);bo
 .rating-box .ratings .rate{display:block}
 .intro-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.intro.first:after{background:linear-gradient(180deg,#0001 42%,#000b 100%)}.intro-status{position:absolute;z-index:4;inset:0 0 auto;color:#fff}.intro-status .statusbar{background:transparent}.intro-video-logo{position:absolute;z-index:4;left:50%;bottom:42px;width:82px;transform:translateX(-50%);filter:brightness(0) invert(1)}
 #main{overscroll-behavior:contain}.hero{height:420px}.hero-slide{cursor:pointer}.hero-slide img{object-position:center 52%}.quick{min-height:88px;padding:15px 18px 17px}.quick button{min-width:0;line-height:1.25}.section{padding:27px 14px 30px}.section h2{font-size:20px;line-height:1.25;letter-spacing:-.45px}.section-sub{margin-top:5px;margin-bottom:16px}.news-card{display:block;width:100%;height:154px;margin:9px 0 0;text-align:left}.news-card img{object-position:center 52%}.news-card div{right:18px}.talk-row{width:100%;text-align:left}.rank-row{width:100%;text-align:left}.empty-week{margin-top:18px}.taste-card{width:100%}
-@media(max-height:760px){.hero{height:382px}.quick{min-height:82px}.section{padding-top:23px}}
+@media(max-width:430px) and (max-height:760px){.hero{height:382px}.quick{min-height:82px}.section{padding-top:23px}}
 .map-static{position:absolute;inset:0;background:#f1eee8}.map-static>svg{width:100%;height:100%}.static-pin{position:absolute;width:25px;height:31px;border-radius:50% 50% 50% 5px;background:var(--red);transform:translate(-50%,-100%) rotate(-45deg);box-shadow:0 2px 5px #0003}.static-pin:after{content:'';position:absolute;left:9px;top:8px;width:8px;height:8px;border-radius:50%;background:#fff}.static-pin.hero{width:52px;height:52px;border-radius:50%;transform:translate(-50%,-50%);color:#fff;display:grid;place-items:center}.static-pin.hero:after{display:none}.static-pin.hero svg{width:27px;height:27px}
 .map-static text{stroke:none}
 
@@ -67,3 +67,12 @@ dialog{width:calc(100% - 34px);max-width:396px;max-height:calc(100dvh - 90px);bo
 .tob-foot{flex:none;padding:16px 20px calc(32px + env(safe-area-inset-bottom,0px));display:flex;flex-direction:column;gap:8px;background:#fff}
 .tob-main{height:56px;border:0;border-radius:16px;background:var(--red);color:#fff;font-size:17px;line-height:24px;font-weight:700}
 .tob-sub{height:48px;border:1px solid #d7d2d2;border-radius:16px;background:#fff;color:#1b1a1a;font-size:17px;line-height:24px;font-weight:500}
+
+/* ===== 데스크톱: 프레임을 430 × 932로 고정 (모바일 MVP 기준 크기). 화면이 작으면 --s 배율로 통째로 축소 ===== */
+@media(min-width:431px){
+.phone{position:fixed;left:50%;top:50%;width:430px;height:932px;margin:0;transform:translate(-50%,-50%) scale(var(--s,1));transform-origin:center}
+dialog{position:fixed;inset:auto;left:50%;top:50%;margin:0;max-height:842px;transform:translate(-50%,-50%) scale(var(--s,1))}
+.auth-dialog{width:430px;height:932px;max-height:932px}
+.toast{bottom:auto;top:calc(50% + 371px*var(--s,1));transform:translate(-50%,calc(20px - 100%))}
+.toast.show{transform:translate(-50%,-100%)}
+}
